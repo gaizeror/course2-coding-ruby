@@ -18,7 +18,7 @@ Rake::PackageTask.new(LAST_DIRECTORY.gsub(/(\W|\d)/, "_"), :noversion) do |p|
 end
 
 
-desc "A proxy to package as tar gz"
+desc "A proxy to package as tar.gz"
 task :archive do
 	Rake::Task[:package].invoke()
 end
