@@ -1,5 +1,5 @@
 namespace :files do
-	desc 'takes a file with a suffix .yaml and changes it to .yml'
+	desc 'Takes a file with a suffix .yaml and changes it to .yml'
 	task :rename_yml do
 	    file = ENV["MYPATH"]
 	    source = File.new(file, "r+")
